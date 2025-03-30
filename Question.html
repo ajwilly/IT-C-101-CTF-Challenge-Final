@@ -32,22 +32,22 @@
     <div class="section">
         <h2>Question 2:</h2>
         <ul>
-            <li>How many siblings do I have? <i>
-                <input type="text" name="question1" placeholder="Enter your answer here" id="question1" onkeydown="if(event.key === 'Enter') checkAnswer();">
-                <button onclick="checkAnswer()">Submit</button>
-                <script>
-                    function checkAnswer() {
-                        const answer = document.getElementById('question1').value.trim().toLowerCase();
-                        if (answer === '4') {
-                            window.location.href = 'file:///Users/ajwillardson/Desktop/School/IT&C%20101/CTF%20Challenge%20Files/Question3.html'; // Replace with the actual next page URL
-                        } else {
-                            alert('Incorrect answer. Please try again.');
-                        }
+            <li>How many siblings do I have?</li>
+            <input type="text" name="question1" placeholder="Enter your answer here" id="question1" onkeydown="if(event.key === 'Enter') checkAnswer();">
+            <button onclick="checkAnswer()">Submit</button>
+            <script>
+                function checkAnswer() {
+                    const answer = document.getElementById('question1').value.trim().toLowerCase();
+                    if (answer === '4') {
+                        window.location.href = './Question3.html'; // Ensure the URL is relative to the current file
+                    } else {
+                        alert('Incorrect answer. Please try again.');
                     }
-                </script>
-            
+                }
+            </script>
         </ul>
     </div>
+
 
     
 
