@@ -33,7 +33,7 @@
         <h2>Question 2:</h2>
         <ul>
             <li>How many siblings do I have? <i>
-                <input type="text" name="question1" placeholder="Enter your answer here" id="question1" onkeypress="if(event.key === 'Enter') checkAnswer();">
+                <input type="text" name="question1" placeholder="Enter your answer here" id="question1" onkeydown="if(event.key === 'Enter') checkAnswer();">
                 <button onclick="checkAnswer()">Submit</button>
                 <script>
                     function checkAnswer() {
